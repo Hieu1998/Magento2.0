@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Lotus_Backend::system_backend" title="Get products using Ui component" translate="title"
+             module="Lotus_Backend" sortOrder="30"
+             parent="Lotus_Backend::system_backend_2" action="backend/index" resource="Lotus_Backend::index"/>
+
+        <add id="Lotus_Backend::system_backend_product" title="Create form using Ui component" translate="title"
+             module="Lotus_Backend" sortOrder="30"
+             parent="Lotus_Backend::system_backend_2" action="backend/index/new" resource="Lotus_Backend::form"/>
+             <!-- parent == id của parent -->
+        <!-- tao parent menu-->
+        <add id="Lotus_Backend::system_backend_2" title="Lotus Backend 2" translate="title"
+             module="Lotus_Backend" sortOrder="30"
+             action="backend/index" resource="Lotus_Backend::parenttest"/>
+    </menu>
+</config>

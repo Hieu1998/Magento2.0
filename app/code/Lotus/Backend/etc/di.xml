@@ -1,0 +1,16 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="backend_listing_data_source" xsi:type="string">Lotus\Backend\Model\ResourceModel\Backend\Collection</item>
+                <item name="backend_form_data_source" xsi:type="string">Lotus\Backend\Model\ResourceModel\Backend\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Lotus\Backend\Model\ResourceModel\Backend\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">l_demoproduct</argument>
+            <argument name="resourceModel" xsi:type="string">Lotus\Backend\Model\ResourceModel\Backend</argument>
+        </arguments>
+    </virtualType>
+</config>

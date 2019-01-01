@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <!-- nhung file css va js -->
+    <head>
+        <css src="Extension_Allocation::css/style.css"/>
+        <script src="Extension_Allocation::css/grid.js"/>
+    </head> 
+    <!-- goi den file templates -->
+    <referenceContainer name="content">
+        <block class="Magento\Framework\View\Element\Template" name="shop_grid_container" template="Extension_Allocation::allocation/container.phtml">
+           
+            <block class="Extension\Allocation\Block\Allocation\Grid" name="shop_grid" 
+            template="Extension_Allocation::allocation/grid.phtml" />
+            
+            <block class="Extension\Allocation\Block\Allocation\Grid" name="shop_grid_header" 
+            template="Extension_Allocation::allocation/header.phtml" />
+            
+        </block>
+    </referenceContainer>
+</page>

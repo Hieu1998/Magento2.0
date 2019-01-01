@@ -1,0 +1,23 @@
+<?php
+//get data
+$productCollection = $block->getAllocations();
+//print
+?>
+<table>
+    <tr class="tr-table">
+        <td>SKU</td>
+        <td>EMAIL</td>
+        <td>QUANTITY</td>
+    </tr>
+    <tr class="tr-table">
+    <?php
+    foreach($productCollection as $item){
+    ?>
+        <td class="td-table"><?=$item->getSku();?></td>
+        <td class="td-table"><?=$item->getEmail();?></td>
+        <td class="td-table"><?=$item->getQuantity();?></td>
+    <?php
+    }
+    ?>
+    </tr>
+</table>

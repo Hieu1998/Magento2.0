@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Extension_Backend::system_backend" title="Grid Data" translate="title"
+             module="Extension_Backend" sortOrder="30"
+             parent="Extension_Backend::system_backend_menu" action="extensionbackend/index" resource="Extension_Backend::index"/>
+
+        <add id="Extension_Backend::system_backend_form" title="Form Quota" translate="title"
+             module="Extension_Backend" sortOrder="30"
+             parent="Extension_Backend::system_backend_menu" action="extensionbackend/index/newactionquota" resource="Extension_Backend::form"/>
+             <!-- parent == id của parent -->
+        <!-- tao parent menu-->
+        <add id="Extension_Backend::system_backend_menu" title="Menu Extension" translate="title"
+             module="Extension_Backend" sortOrder="30"
+             action="extensionbackend/index" resource="Extension_Backend::parent"/>
+    </menu>
+</config>

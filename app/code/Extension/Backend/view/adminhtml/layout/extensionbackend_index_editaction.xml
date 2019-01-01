@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<page layout="admin-2columns-left" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <!-- load file backend_grid -->
+    <!-- <update handle="backend_grid_product"/> -->
+    <body>
+        <referenceContainer name="content">
+            <!-- product grid có sẵn -->
+            <!-- <uiComponent name="product_listing"/> -->
+            <uiComponent name="extensionbackend_edit_form"/>
+        </referenceContainer>
+    </body>
+</page>
